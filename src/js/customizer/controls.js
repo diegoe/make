@@ -271,8 +271,8 @@
 			var control = this;
 
 			// Add template functions
-			options.params.itemTemplate = control.getItemTemplate();
-			options.params.listTemplate = control.getListTemplate();
+			options.itemTemplate = control.getItemTemplate();
+			options.listTemplate = control.getListTemplate();
 
 			// Do parent stuff
 			api.Control.prototype.initialize.apply(control, arguments);
