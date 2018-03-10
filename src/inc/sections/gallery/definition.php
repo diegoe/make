@@ -654,29 +654,35 @@ class MAKE_Sections_Gallery_Definition {
 endif;
 
 /**
- * MISSING DOCS
+ * Get the anchor element for the gallery item.
+ *
+ * @since  1.9.9.
+ *
+ * @param  array     $item      The item's data.
+ * @return string               The HTML for the item's anchor element.
  */
-function ttfmake_builder_get_gallery_item_onclick( $item ) {
+function ttfmake_builder_get_gallery_item_anchor( $item ) {
 	$link = $item['link'];
 
 	if ( '' === $link ) {
-		return '';
+		return 'no link';
 	}
 
 	$external = isset( $item['open-new-tab'] ) && $item['open-new-tab'] === 1;
 	$url = esc_js( esc_url( $link ) );
-	$open_function = $external ? 'window.open(\'' . $url . '\')': 'window.location.href = \'' . $url . '\'';
-	$onclick = ' onclick="event.preventDefault(); '. $open_function . ';"';
+	$target = $external ? ' target="_blank"' : '';
+	$anchor = '<a href="' . $url . '"' . $target . '>';
+	echo $anchor;
 
 	/**
-	 * Filter the class used for a gallery item.
+	 * Filter the anchor used for a gallery item.
 	 *
-	 * @since 1.7.6.
+	 * @since 1.9.9.
 	 *
-	 * @param string    $onclick                 The computed gallery onclick attribute.
+	 * @param string    $anchor                  The computed gallery anchor element.
 	 * @param string    $link                    The item.
 	 */
-	return apply_filters( 'make_builder_get_gallery_item_onclick', $onclick, $item );
+	return apply_filters( 'make_builder_get_gallery_item_anchor', $anchor, $item );
 }
 
 /**
