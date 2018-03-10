@@ -487,7 +487,7 @@ foreach ( $views as $view => $label ) {
 			$prefix . 'breadcrumb'       => array(
 				'setting' => true,
 				'control' => array(
-					'label' => __( 'Show breadcumbs', 'make' ),
+					'label' => __( 'Show breadcrumbs', 'make' ),
 					'type'  => 'checkbox',
 				),
 			),
