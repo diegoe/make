@@ -5,12 +5,12 @@
  * Author:      The Theme Foundry
  * Author URI:  https://thethemefoundry.com
  * Description: Build a website that means business. With Make’s powerful drag and drop page builder and hundreds of Customizer options, you can effortlessly brand your site without touching a line of code. Add full-width banners, columns, and galleries to showcase your best work. The intuitive builder delivers clean, lean code — not shortcodes — so you can trust your content remains portable. Make lets you control page layout options, including sidebar display, on all your posts and pages. Choose from hundreds of Google Fonts and upload custom backgrounds everywhere. Built on a fully responsive grid, Make renders as beautifully on tablets and phone screens as it does on desktop. Make scales with your business and is fully compatible with popular plugins like WooCommerce, Gravity Forms, Contact Form 7, Jetpack, and others. For documentation on the page builder and getting started with Make, see: https://thethemefoundry.com/make-help/
- * Version:     1.9.8
+ * Version:     1.9.24
  * License:     GNU General Public License v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: make
  * Domain Path: /languages/
- * Tags:        one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, grid-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, footer-widgets, blog, e-commerce, portfolio, accessibility-ready, custom-logo, featured-image-header, rtl-language-support
+ * Tags:        one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, grid-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, footer-widgets, blog, e-commerce, portfolio
  *
  * Make WordPress Theme, Copyright 2014-2016 The Theme Foundry
  * Make is distributed under the terms of the GNU GPL
@@ -1002,8 +1002,8 @@ div.custom-logo a {
 	color: #808080;
 }
 
-.social-links a:hover .fa.fa-facebook-official,
-.social-links a:focus .fa.fa-facebook-official {
+.social-links a:hover .fa.fa-facebook-square,
+.social-links a:focus .fa.fa-facebook-square {
 	color: #3b5999;
 }
 
@@ -1214,10 +1214,10 @@ div.custom-logo a {
 	.site-navigation .menu .children,
 	.site-navigation .nav-menu .sub-menu,
 	.site-navigation .nav-menu .children {
-		display: none;
 		overflow: hidden;
 		position: absolute;
-		z-index: 99999;
+		z-index: -1;
+		height: 0;
 		background-color: #eaecee;
 	}
 
@@ -1267,10 +1267,10 @@ div.custom-logo a {
 		position: relative;
 		top: 4px;
 		top: 0.4rem;
-		font-family: FontAwesome;
+		font-family: "Font Awesome 5 Free";
 		font-size: 10px;
 		font-size: 1rem;
-		font-weight: normal;
+		font-weight: 900;
 		text-decoration: none;
 		content: "  \f054";
 	}
@@ -1346,10 +1346,10 @@ div.custom-logo a {
 		padding-left: 2px;
 		padding-left: 0.2rem;
 		color: #b9bcbf;
-		font-family: FontAwesome;
+		font-family: "Font Awesome 5 Free";
 		font-size: 10px;
 		font-size: 1rem;
-		font-weight: normal;
+		font-weight: 900;
 		text-decoration: none;
 		content: "  \f078";
 	}
@@ -1380,8 +1380,8 @@ div.custom-logo a {
 	.site-navigation .menu ul li:hover > ul,
 	.site-navigation ul.menu .focus > ul,
 	.site-navigation .menu .focus > ul {
-		display: block;
 		overflow: inherit;
+		z-index: 99999;
 		width: inherit;
 		height: inherit;
 	}
@@ -1419,10 +1419,9 @@ div.custom-logo a {
 .site-navigation .desktop-menu .menu .children,
 .site-navigation .desktop-menu .nav-menu .sub-menu,
 .site-navigation .desktop-menu .nav-menu .children {
-	display: none;
 	overflow: hidden;
 	position: absolute;
-	z-index: 99999;
+	z-index: -1;
 	background-color: #eaecee;
 }
 
@@ -1471,10 +1470,10 @@ div.custom-logo a {
 	position: relative;
 	top: 4px;
 	top: 0.4rem;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
 	font-size: 10px;
 	font-size: 1rem;
-	font-weight: normal;
+	font-weight: 900;
 	content: "  \f054";
 }
 
@@ -1544,10 +1543,10 @@ div.custom-logo a {
 	padding-left: 2px;
 	padding-left: 0.2rem;
 	color: #b9bcbf;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
 	font-size: 10px;
 	font-size: 1rem;
-	font-weight: normal;
+	font-weight: 900;
 	content: "  \f078";
 }
 
@@ -1577,8 +1576,8 @@ div.custom-logo a {
 .site-navigation .desktop-menu .menu ul li:hover > ul,
 .site-navigation .desktop-menu ul.menu .focus > ul,
 .site-navigation .desktop-menu .menu .focus > ul {
-	display: block;
 	overflow: inherit;
+	z-index: 99999;
 	width: inherit;
 	height: inherit;
 }
@@ -1603,7 +1602,8 @@ div.custom-logo a {
 .menu-toggle:before {
 	padding-right: 6px;
 	padding-right: 0.6rem;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	content: "\f0c9";
 }
 
@@ -1882,6 +1882,7 @@ h6 a,
 a
   h6 {
 	color: inherit;
+	font-weight: inherit;
 	text-decoration: none;
 }
 
@@ -2148,30 +2149,35 @@ ul.ttfmake-list li:before,
 ol.ttfmake-list li:before {
 	padding-right: 10.6666666667px;
 	padding-right: 1.0666666667rem;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 ul.ttfmake-list-check li:before,
 ol.ttfmake-list-check li:before {
 	color: #339d56;
+	font-weight: 900;
 	content: "\f14a";
 }
 
 ul.ttfmake-list-check2 li:before,
 ol.ttfmake-list-check2 li:before {
 	color: #339d56;
+	font-weight: 400;
 	content: "\f046";
 }
 
 ul.ttfmake-list-star li:before,
 ol.ttfmake-list-star li:before {
 	color: #f89e01;
+	font-weight: 900;
 	content: "\f005";
 }
 
 ul.ttfmake-list-dot li:before,
 ol.ttfmake-list-dot li:before {
 	color: #3070d1;
+	font-weight: 400;
 	content: "\f192";
 }
 
@@ -2370,9 +2376,10 @@ Notices / Alerts (_elements.scss)
 	bottom: -12px;
 	bottom: -1.2rem;
 	opacity: 0.1;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
 	font-size: 72px;
 	font-size: 7.2rem;
+	font-weight: 900;
 	line-height: 1;
 	content: "\f05a";
 }
@@ -2388,6 +2395,7 @@ Notices / Alerts (_elements.scss)
 }
 
 .ttfmake-alert.ttfmake-error:before {
+	font-weight: 900;
 	content: "\f06a";
 }
 
@@ -2398,6 +2406,7 @@ Notices / Alerts (_elements.scss)
 }
 
 .ttfmake-alert.ttfmake-success:before {
+	font-weight: 900;
 	content: "\f058";
 }
 
@@ -2408,6 +2417,7 @@ Notices / Alerts (_elements.scss)
 }
 
 .ttfmake-alert.ttfmake-important:before {
+	font-weight: 900;
 	content: "\f06a";
 }
 
@@ -2716,7 +2726,8 @@ div.wp-video-shortcode {
 	padding-right: 8px;
 	padding-right: 0.8rem;
 	color: #b9bcbf;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	content: "\f075";
 }
 
@@ -2878,8 +2889,8 @@ div.wp-video-shortcode {
 #infinite-handle a:after,
 #infinite-handle span:before,
 #infinite-handle span:after {
-	font-family: FontAwesome;
-	font-weight: normal;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 }
 
 [class*="navigation"] .nav-previous {
@@ -2887,7 +2898,7 @@ div.wp-video-shortcode {
 }
 
 [class*="navigation"] .nav-previous a:before {
-	content: "\f177  ";
+	content: "\f30a  ";
 }
 
 [class*="navigation"] .nav-next,
@@ -2900,7 +2911,7 @@ div.wp-video-shortcode {
 [class*="navigation"] .nav-next span:after,
 #infinite-handle a:after,
 #infinite-handle span:after {
-	content: "  \f178";
+	content: "  \f30b";
 }
 
 .infinite-scroll .paging-navigation {
@@ -3424,9 +3435,10 @@ div.wp-video-shortcode {
 	top: -34px;
 	top: -3.4rem;
 	color: #eaecee;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
 	font-size: 34px;
 	font-size: 3.4rem;
+	font-weight: 900;
 	line-height: 1;
 }
 
@@ -4217,7 +4229,8 @@ input[type="reset"].ttfmake-download:after,
 input[type="submit"].ttfmake-download:after {
 	padding-left: 6px;
 	padding-left: 0.6rem;
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	content: "\f0ab";
 }
 

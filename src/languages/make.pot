@@ -1,14 +1,14 @@
-# Copyright (C) 2017 The Theme Foundry
+# Copyright (C) 2019 The Theme Foundry
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Make 1.9.8\n"
+"Project-Id-Version: Make 1.9.24\n"
 "Report-Msgid-Bugs-To: https://thethemefoundry.com/support/\n"
-"POT-Creation-Date: 2017-11-16 07:26:25+00:00\n"
+"POT-Creation-Date: 2019-03-02 08:05:18+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: The Theme Foundry\n"
 "Language-Team: The Theme Foundry\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
@@ -116,43 +116,43 @@ msgstr ""
 
 #: inc/admin/current-notices.php:80
 msgid ""
-"The latest version of Make isn’t compatible with the version of Make Plus "
-"you’re using. Please update Make Plus."
+"The latest version of Make isn't compatible with the version of Make Plus "
+"you're using. Please update Make Plus."
 msgstr ""
 
-#: inc/builder/core/base.php:82
+#: inc/builder/core/base.php:91
 msgid "Page Builder"
 msgstr ""
 
-#: inc/builder/core/base.php:85 inc/builder/setup.php:122
+#: inc/builder/core/base.php:94 inc/builder/setup.php:122
 msgid "Post Builder"
 msgstr ""
 
-#: inc/builder/core/base.php:100
+#: inc/builder/core/base.php:109
 msgid "Post builder"
 msgstr ""
 
-#: inc/builder/core/base.php:137 inc/builder/setup.php:141
+#: inc/builder/core/base.php:146 inc/builder/setup.php:141
 msgid "Enable post builder"
 msgstr ""
 
-#: inc/builder/core/base.php:324
+#: inc/builder/core/base.php:333
 msgid "Are you sure you want to trash this section permanently?"
 msgstr ""
 
-#: inc/builder/core/base.php:346
+#: inc/builder/core/base.php:355
 msgid "Note: the Builder Template does not display a featured image."
 msgstr ""
 
-#: inc/builder/core/base.php:450 inc/builder/core/configuration-helpers.php:113
+#: inc/builder/core/base.php:459 inc/builder/core/configuration-helpers.php:113
 msgid "Set image"
 msgstr ""
 
-#: inc/builder/core/base.php:481
+#: inc/builder/core/base.php:490
 msgid "Click to edit"
 msgstr ""
 
-#: inc/builder/core/base.php:487 inc/builder/core/base.php:517
+#: inc/builder/core/base.php:496 inc/builder/core/base.php:526
 #: inc/sections/banner/builder-template-slide.php:24
 #: inc/sections/banner/builder-template-slide.php:27
 #: inc/sections/columns/builder-template-column.php:18
@@ -162,18 +162,22 @@ msgstr ""
 msgid "Edit content"
 msgstr ""
 
-#: inc/builder/core/base.php:518
+#: inc/builder/core/base.php:527
 msgid "Update changes"
 msgstr ""
 
-#: inc/builder/core/base.php:531
+#: inc/builder/core/base.php:540
 #: inc/builder/core/templates/overlay-configuration.php:69
 msgid "Current image"
 msgstr ""
 
-#: inc/builder/core/base.php:533
+#: inc/builder/core/base.php:542
 #: inc/builder/core/templates/overlay-configuration.php:71
 msgid "Remove Current Image"
+msgstr ""
+
+#: inc/builder/core/templates/happyforms-ad.php:11
+msgid "Dismiss"
 msgstr ""
 
 #: inc/builder/core/templates/section-header.php:15
@@ -614,105 +618,102 @@ msgstr ""
 
 #: inc/compatibility/settingsmigration.php:156
 msgid ""
-"\n"
-"\t\t\tThis site is currently using a child theme. Any changes made in the "
-"Customizer to the Make parent theme\n"
-"\t\t\tbefore the child theme was activated do not carry over. You can use "
-"this tool to import these settings\n"
-"\t\t\tinto the child theme so you don't have to start over again!\n"
-"\t\t"
+"This site is currently using a child theme. Any changes made in the "
+"Customizer to the Make parent theme before the child theme was activated do "
+"not carry over. You can use this tool to import these settings into the "
+"child theme so you don't have to start over again!"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:162
+#: inc/compatibility/settingsmigration.php:158
 msgid "Import settings from the parent theme"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:164
+#: inc/compatibility/settingsmigration.php:160
 msgid ""
 "Use this tool to migrate your existing settings from the parent theme to "
 "your child theme."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:165
-#: inc/compatibility/settingsmigration.php:192
+#: inc/compatibility/settingsmigration.php:161
+#: inc/compatibility/settingsmigration.php:188
 msgid ""
 "Note that in doing this, your database will be modified. Any existing "
 "settings that have already been configured for the current theme will be "
 "overwritten."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:172
-#: inc/compatibility/settingsmigration.php:199
+#: inc/compatibility/settingsmigration.php:168
+#: inc/compatibility/settingsmigration.php:195
 msgid "I have backed up my database. (<a href=\"%s\" target=\"_blank\">How?</a>)"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:182
+#: inc/compatibility/settingsmigration.php:178
 msgid "Import"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:186
+#: inc/compatibility/settingsmigration.php:182
 msgid "There are no parent theme settings to import."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:190
+#: inc/compatibility/settingsmigration.php:186
 msgid "Restore previous theme settings"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:191
+#: inc/compatibility/settingsmigration.php:187
 msgid ""
 "Use this tool to restore settings that were previously overwritten when "
 "importing parent theme settings."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:209
+#: inc/compatibility/settingsmigration.php:205
 msgid "Restore"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:235
+#: inc/compatibility/settingsmigration.php:231
 msgid "Please verify that you have backed up your database."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:236
-#: inc/compatibility/settingsmigration.php:250
-#: inc/compatibility/settingsmigration.php:264
-#: inc/compatibility/settingsmigration.php:409
+#: inc/compatibility/settingsmigration.php:232
+#: inc/compatibility/settingsmigration.php:246
+#: inc/compatibility/settingsmigration.php:260
+#: inc/compatibility/settingsmigration.php:405
 msgid "No settings migration has taken place."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:249
+#: inc/compatibility/settingsmigration.php:245
 msgid "Invalid action."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:263
+#: inc/compatibility/settingsmigration.php:259
 msgid "Cheatin&#8217; uh?"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:306
+#: inc/compatibility/settingsmigration.php:302
 msgid "No parent theme settings were found to import."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:322
-#: inc/compatibility/settingsmigration.php:388
+#: inc/compatibility/settingsmigration.php:318
+#: inc/compatibility/settingsmigration.php:384
 msgid "Existing child theme settings were backed up."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:333
+#: inc/compatibility/settingsmigration.php:329
 msgid "The parent theme settings were imported!"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:343
+#: inc/compatibility/settingsmigration.php:339
 msgid "The import process failed."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:369
+#: inc/compatibility/settingsmigration.php:365
 msgid "No child theme settings backup was found to restore."
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:396
+#: inc/compatibility/settingsmigration.php:392
 msgid "The child theme settings backup was restored!"
 msgstr ""
 
-#: inc/compatibility/settingsmigration.php:408
+#: inc/compatibility/settingsmigration.php:404
 msgid "The restore process failed."
 msgstr ""
 
@@ -801,7 +802,7 @@ msgstr ""
 
 #: inc/customizer/datahelper.php:46
 #: inc/customizer/definitions/background-images.php:77
-#: inc/customizer/definitions/color.php:583
+#: inc/customizer/definitions/color.php:596
 #: inc/customizer/definitions/general.php:98
 #: inc/customizer/definitions/layout.php:512
 #: inc/customizer/definitions/typography.php:145
@@ -856,7 +857,7 @@ msgid "Main Column"
 msgstr ""
 
 #: inc/customizer/definitions/background-images.php:17
-#: inc/customizer/definitions/color.php:509
+#: inc/customizer/definitions/color.php:522
 #: inc/customizer/definitions/layout.php:139
 #: inc/customizer/definitions/typography.php:99
 msgid "Footer"
@@ -893,13 +894,13 @@ msgstr ""
 #: inc/customizer/definitions/color.php:286
 #: inc/customizer/definitions/color.php:298
 #: inc/customizer/definitions/color.php:322
-#: inc/customizer/definitions/color.php:393
-#: inc/customizer/definitions/color.php:450
-#: inc/customizer/definitions/color.php:462
-#: inc/customizer/definitions/color.php:474
-#: inc/customizer/definitions/color.php:492
-#: inc/customizer/definitions/color.php:526
-#: inc/customizer/definitions/color.php:538
+#: inc/customizer/definitions/color.php:406
+#: inc/customizer/definitions/color.php:463
+#: inc/customizer/definitions/color.php:475
+#: inc/customizer/definitions/color.php:487
+#: inc/customizer/definitions/color.php:505
+#: inc/customizer/definitions/color.php:539
+#: inc/customizer/definitions/color.php:551
 #: inc/customizer/definitions/layout.php:17
 #: inc/customizer/definitions/typography.php:17
 msgid "Global"
@@ -915,8 +916,8 @@ msgstr ""
 
 #: inc/customizer/definitions/color.php:33
 #: inc/customizer/definitions/color.php:321
-#: inc/customizer/definitions/color.php:491
-#: inc/customizer/definitions/color.php:525
+#: inc/customizer/definitions/color.php:504
+#: inc/customizer/definitions/color.php:538
 msgid "Primary Color"
 msgstr ""
 
@@ -933,7 +934,7 @@ msgstr ""
 
 #: inc/customizer/definitions/color.php:44
 #: inc/customizer/definitions/color.php:297
-#: inc/customizer/definitions/color.php:473
+#: inc/customizer/definitions/color.php:486
 msgid "Secondary Color"
 msgstr ""
 
@@ -948,9 +949,9 @@ msgstr ""
 #: inc/customizer/definitions/color.php:241
 #: inc/customizer/definitions/color.php:263
 #: inc/customizer/definitions/color.php:266
-#: inc/customizer/definitions/color.php:375
-#: inc/customizer/definitions/color.php:449
-#: inc/customizer/definitions/color.php:461 inc/formatting/manager.php:343
+#: inc/customizer/definitions/color.php:388
+#: inc/customizer/definitions/color.php:462
+#: inc/customizer/definitions/color.php:474 inc/formatting/manager.php:343
 msgid "Text Color"
 msgstr ""
 
@@ -969,17 +970,17 @@ msgid "UI icons"
 msgstr ""
 
 #: inc/customizer/definitions/color.php:76
-#: inc/customizer/definitions/color.php:481
+#: inc/customizer/definitions/color.php:494
 #: inc/customizer/definitions/typography.php:20
 msgid "Links"
 msgstr ""
 
 #: inc/customizer/definitions/color.php:83
-#: inc/customizer/definitions/color.php:389
-#: inc/customizer/definitions/color.php:392
-#: inc/customizer/definitions/color.php:500
-#: inc/customizer/definitions/color.php:534
-#: inc/customizer/definitions/color.php:537
+#: inc/customizer/definitions/color.php:402
+#: inc/customizer/definitions/color.php:405
+#: inc/customizer/definitions/color.php:513
+#: inc/customizer/definitions/color.php:547
+#: inc/customizer/definitions/color.php:550
 msgid "Link Hover/Focus Color"
 msgstr ""
 
@@ -1023,9 +1024,9 @@ msgstr ""
 #: inc/customizer/definitions/color.php:185
 #: inc/customizer/definitions/color.php:306
 #: inc/customizer/definitions/color.php:330
-#: inc/customizer/definitions/color.php:355
-#: inc/customizer/definitions/color.php:420
-#: inc/customizer/definitions/color.php:565
+#: inc/customizer/definitions/color.php:368
+#: inc/customizer/definitions/color.php:433
+#: inc/customizer/definitions/color.php:578
 msgid "Opacity"
 msgstr ""
 
@@ -1039,8 +1040,9 @@ msgstr ""
 #: inc/customizer/definitions/color.php:172
 #: inc/customizer/definitions/color.php:294
 #: inc/customizer/definitions/color.php:348
-#: inc/customizer/definitions/color.php:407
-#: inc/customizer/definitions/color.php:552 inc/formatting/manager.php:342
+#: inc/customizer/definitions/color.php:361
+#: inc/customizer/definitions/color.php:420
+#: inc/customizer/definitions/color.php:565 inc/formatting/manager.php:342
 msgid "Background Color"
 msgstr ""
 
@@ -1076,13 +1078,13 @@ msgstr ""
 #: inc/customizer/definitions/color.php:284
 #: inc/customizer/definitions/color.php:296
 #: inc/customizer/definitions/color.php:320
-#: inc/customizer/definitions/color.php:391
-#: inc/customizer/definitions/color.php:448
-#: inc/customizer/definitions/color.php:460
-#: inc/customizer/definitions/color.php:472
-#: inc/customizer/definitions/color.php:490
-#: inc/customizer/definitions/color.php:524
-#: inc/customizer/definitions/color.php:536
+#: inc/customizer/definitions/color.php:404
+#: inc/customizer/definitions/color.php:461
+#: inc/customizer/definitions/color.php:473
+#: inc/customizer/definitions/color.php:485
+#: inc/customizer/definitions/color.php:503
+#: inc/customizer/definitions/color.php:537
+#: inc/customizer/definitions/color.php:549
 msgid "This option overrides the %s option in the %s section."
 msgstr ""
 
@@ -1101,46 +1103,50 @@ msgid "Hover/Focus Background Color"
 msgstr ""
 
 #: inc/customizer/definitions/color.php:341
+msgid "Mobile Menu Trigger"
+msgstr ""
+
+#: inc/customizer/definitions/color.php:354
 #: inc/customizer/definitions/typography.php:71
 msgid "Current Item"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:369
+#: inc/customizer/definitions/color.php:382
 #: inc/customizer/definitions/typography.php:78
 msgid "Header Bar"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:382
-#: inc/customizer/definitions/color.php:488
-#: inc/customizer/definitions/color.php:522
+#: inc/customizer/definitions/color.php:395
+#: inc/customizer/definitions/color.php:501
+#: inc/customizer/definitions/color.php:535
 msgid "Link Color"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:401
-#: inc/customizer/definitions/color.php:470
-#: inc/customizer/definitions/color.php:546 inc/formatting/manager.php:364
+#: inc/customizer/definitions/color.php:414
+#: inc/customizer/definitions/color.php:483
+#: inc/customizer/definitions/color.php:559 inc/formatting/manager.php:364
 msgid "Border Color"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:434
+#: inc/customizer/definitions/color.php:447
 #: inc/customizer/definitions/typography.php:89
 msgid "Sidebars"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:439
+#: inc/customizer/definitions/color.php:452
 #: inc/customizer/definitions/layout.php:144
 msgid "Widgets"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:446
+#: inc/customizer/definitions/color.php:459
 msgid "Widget Title Color"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:458
+#: inc/customizer/definitions/color.php:471
 msgid "Widget Body Color"
 msgstr ""
 
-#: inc/customizer/definitions/color.php:515
+#: inc/customizer/definitions/color.php:528
 msgid "Footer Text Color"
 msgstr ""
 
@@ -1170,8 +1176,8 @@ msgstr ""
 
 #: inc/customizer/definitions/general.php:80
 msgid ""
-"Add a link to each of your social profiles and we&#8217;ll add the icon to "
-"match — it&#8217;s that simple. Drag and drop to rearrange."
+"Add a link to each of your social profiles and we'll add the icon to match "
+"— it's that simple. Drag and drop to rearrange."
 msgstr ""
 
 #: inc/customizer/definitions/layout.php:25
@@ -1486,61 +1492,47 @@ msgstr ""
 
 #: inc/error/display.php:499
 msgid ""
-"\n"
-"\t\t\t\t\t\t\tMake notices occur when Make's functionality is used "
-"incorrectly. Often these notices are\n"
-"\t\t\t\t\t\t\ttriggered by code errors in a child theme or plugin that "
-"extends the theme. The notice\n"
-"\t\t\t\t\t\t\tmessages help you to identify the cause of the errors so they "
-"can be fixed.\n"
-"\t\t\t\t\t\t"
+"Make notices occur when Make's functionality is used incorrectly. Often "
+"these notices are triggered by code errors in a child theme or plugin that "
+"extends the theme. The notice messages help you to identify the cause of "
+"the errors so they can be fixed."
+msgstr ""
+
+#: inc/error/display.php:501
+msgid "Is it important to fix these notices?"
+msgstr ""
+
+#: inc/error/display.php:503
+msgid ""
+"Absolutely! These notices may indicate that some part of your site is not "
+"working correctly. We don't want that."
 msgstr ""
 
 #: inc/error/display.php:505
-msgid "Is it important to fix these notices?"
+msgid "How do I fix a Make notice?"
 msgstr ""
 
 #: inc/error/display.php:507
 msgid ""
-"\n"
-"\t\t\t\t\t\t\tAbsolutely! These notices may indicate that some part of your "
-"site is not working correctly.\n"
-"\t\t\t\t\t\t\tWe don't want that.\n"
-"\t\t\t\t\t\t"
+"Check to see if your child theme or plugin has an update available, as a "
+"new version may include changes that fix the errors. If it is caused by "
+"custom code, you will need to modify the code to fix the errors. Check out "
+"our article about <a href=\"%s\" target=\"_blank\">dealing with Make "
+"Notices</a> to learn more."
 msgstr ""
 
-#: inc/error/display.php:512
-msgid "How do I fix a Make notice?"
-msgstr ""
-
-#: inc/error/display.php:514
-msgid ""
-"\n"
-"\t\t\t\t\t\t\tCheck to see if your child theme or plugin has an update "
-"available, as a new version may\n"
-"\t\t\t\t\t\t\tinclude changes that fix the errors. If it is caused by "
-"custom code, you will need to modify\n"
-"\t\t\t\t\t\t\tthe code to fix the errors. Check out our article about <a "
-"href=\"%s\" target=\"_blank\">dealing\n"
-"\t\t\t\t\t\t\twith Make Notices</a> to learn more.\n"
-"\t\t\t\t\t\t"
-msgstr ""
-
-#: inc/error/display.php:521
+#: inc/error/display.php:509
 msgid "How can I hide this notification?"
 msgstr ""
 
-#: inc/error/display.php:523
+#: inc/error/display.php:511
 msgid ""
-"\n"
-"\t\t\t\t\t\t\tThis notification is only visible to users who are logged in "
-"and have the capability to\n"
-"\t\t\t\t\t\t\tinstall themes. To hide it completely, add this code to your "
-"functions.php file: %s\n"
-"\t\t\t\t\t\t"
+"This notification is only visible to users who are logged in and have the "
+"capability to install themes. To hide it completely, add this code to your "
+"functions.php file: %s"
 msgstr ""
 
-#: inc/error/display.php:532
+#: inc/error/display.php:515
 msgid "Error code: %s"
 msgstr ""
 
@@ -1855,6 +1847,16 @@ msgstr ""
 
 #: inc/galleryslider/setup.php:128 inc/sections/banner/definition.php:271
 msgid "Fade"
+msgstr ""
+
+#: inc/gutenberg/manager.php:105
+msgid ""
+"<div>Make's builder requires the classic editor to work, but you can "
+"replace the builder with the Gutenberg editor for this particular "
+"%1s.<br>Read through our guide about <a href=\"%2s\" "
+"target=\"_blank\">getting ready for WordPress 5.0</a> to find out "
+"why.</div><div><a href=\"%3s\" class=\"button\">Use Gutenberg on this "
+"%1s</a></div>"
 msgstr ""
 
 #: inc/integration/wpretina2x.php:116
@@ -2555,18 +2557,20 @@ msgid_plural "%s results found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: searchform.php:9
+#: searchform.php:8
+msgid "Press Enter to submit your search"
+msgstr ""
+
+#: searchform.php:8
 #. Translators: this string is a label for a search input that is only visible
 #. to screen readers.
 msgid "Search for:"
 msgstr ""
 
-#: searchform.php:10
-msgid "Press Enter to submit your search"
-msgstr ""
-
-#: searchform.php:12
+#: searchform.php:9
 #. Translators: this string is the label on the search submit button.
+#. Translators: this string is the label on the search submit button for screen
+#. readers.
 msgid "Search"
 msgstr ""
 
@@ -2809,71 +2813,76 @@ msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:52
 msgctxt "brand name"
-msgid "Tumblr"
+msgid "TripAdvisor"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:53
 msgctxt "brand name"
-msgid "Twitch"
+msgid "Tumblr"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:54
 msgctxt "brand name"
-msgid "Twitter"
+msgid "Twitch"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:55
 msgctxt "brand name"
-msgid "Viadeo"
+msgid "Twitter"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:56
 msgctxt "brand name"
-msgid "Vimeo"
+msgid "Viadeo"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:57
 msgctxt "brand name"
-msgid "Vine"
+msgid "Vimeo"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:58
 msgctxt "brand name"
-msgid "VK"
+msgid "Vine"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:59
 msgctxt "brand name"
-msgid "Sina Weibo"
+msgid "VK"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:60
 msgctxt "brand name"
-msgid "Wei Xin"
+msgid "Sina Weibo"
 msgstr ""
 
 #: inc/socialicons/definitions/socialicons.php:61
+msgctxt "brand name"
+msgid "Wei Xin"
+msgstr ""
+
 #: inc/socialicons/definitions/socialicons.php:62
+#: inc/socialicons/definitions/socialicons.php:63
 msgctxt "brand name"
 msgid "WordPress"
 msgstr ""
 
-#: inc/socialicons/definitions/socialicons.php:63
+#: inc/socialicons/definitions/socialicons.php:64
 msgctxt "brand name"
 msgid "XING"
 msgstr ""
 
-#: inc/socialicons/definitions/socialicons.php:64
+#: inc/socialicons/definitions/socialicons.php:65
 msgctxt "brand name"
 msgid "Yahoo"
 msgstr ""
 
-#: inc/socialicons/definitions/socialicons.php:65
+#: inc/socialicons/definitions/socialicons.php:66
 msgctxt "brand name"
 msgid "Yelp"
 msgstr ""
 
-#: inc/socialicons/definitions/socialicons.php:66
+#: inc/socialicons/definitions/socialicons.php:67
 msgctxt "brand name"
 msgid "YouTube"
 msgstr ""

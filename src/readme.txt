@@ -4,7 +4,7 @@ Contributors: thethemefoundry
 Tags: black, blue, green, gray, orange, red, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, grid-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, footer-widgets, blog, e-commerce, portfolio, accessibility-ready, custom-logo, featured-image-header, rtl-language-support
 
 Requires at least: 4.7
-Tested up to: 4.9
+Tested up to: 5.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,66 @@ Build a website that means business. With Make’s powerful drag and drop page b
 Please see the Make documentation: https://thethemefoundry.com/make-help/
 
 == Changelog ==
+
+= 1.9.24 - March 2 2019 =
+* Bugfix: Pages previously created with Gutenberg to preserve block editor experience.
+
+= 1.9.23 - January 15 2019 =
+* Improvement: Updated Font Awesome to 5.6.3. Added TripAdvisor FA icon to General -> Social Icons in Customizer.
+
+= 1.9.22 - January 8 2019 =
+* Bugfix: Gutenberg compatibility code was returning fatal error when used in combination with some plugins.
+
+= 1.9.21 - December 18 2018 =
+* Bugfix: Toggle between Make builder and Gutenberg editing experience was showing when Gutenberg was not available.
+
+= 1.9.20 - December 14 2018 =
+* Improvement: Wrap block editor's related logic in admin context to prevent issue with third party plugins.
+
+= 1.9.19 - December 12 2018 =
+* Improvement: It's now possible to switch between Make and the block editor on a per post/page basis.
+* Bugfix: Editor height in content edit overlay only allowed showing one line of text on WordPress 5.0.
+
+= 1.9.18 - December 6 2018 =
+* Bugfix: WordPress 5.0 notice wasn't appearing everywhere.
+
+= 1.9.17 - December 6 2018 =
+* Bugfix: WordPress 5.0 notice wasn't dismissible.
+
+= 1.9.16 - December 6 2018 =
+* Improvement: Added WordPress 5.0 editor compatibility notice.
+
+= 1.9.15 - September 15 2018 =
+* Bugfix: Limit the appearance of HappyForms banner to Posts and Pages only.
+
+= 1.9.14 - September 13 2018 =
+* Bugfix: Fixed untranslatable strings in code by removing extra line breaks.
+
+= 1.9.13 - July 17 2018 =
+* New feature: Mobile Menu Trigger background color setting in Customizer's Menu Items color section.
+* Improvement: Search form meets accessibility standards better now.
+* Improvement: Bumped version of Font Awesome CSS.
+* Bugfix: Old version of TinyMCE noneditable plugin was causing issues with editor extensions.
+
+= 1.9.12 - July 3 2018 =
+* Bug fix: Icons in List format builder were not displaying.
+
+= 1.9.11 - Jun 20 2018 =
+* Improvement: Upgraded Font Awesome from v4 to the latest v5.
+* Bug fix: Format builder buttons hover background color and text color was not applying to button.
+* Bug fix: Font weight set in Customizer was not applying to H1.
+
+= 1.9.10 - May 3 2018 =
+* Improvement: disable Customize styles in section previews to avoid white-on-white scenarios.
+* Bug fix: Hide HappyForms notice if Make Plus is active.
+
+= 1.9.9 - May 2 2018 =
+* Improvement: added a Custom CSS option to Button format for easier global customization.
+* Bug fix: Column sorting was messing up column resizing in Content sections.
+* Bug fix: Global discussion settings were being ignored in posts and pages.
+* Bug fix: Make color picker customizations were interfering with core and third party color pickers.
+* Bug fix: Headings font weight configuration didn't apply correctly.
+* Bug fix: Content section was ignoring filtered default amount of columns.
 
 = 1.9.8 - November 14 2017 =
 * Bug fix: Color picker controls misbehave on WordPress 4.9.
@@ -581,6 +641,54 @@ Please see the Make documentation: https://thethemefoundry.com/make-help/
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.9.24 =
+* Fixed pages previously created with Gutenberg to preserve block editor experience.
+
+= 1.9.23 =
+* Updated Font Awesome to 5.6.3. Added TripAdvisor FA icon to General -> Social Icons in Customizer.
+
+= 1.9.22 =
+* Fixed fatal error triggered by Gutenberg compatibility code in Make when used in combination with some plugins.
+
+= 1.9.21 =
+* Fixed appearance for toggle between Make builder and Gutenberg editing experience.
+
+= 1.9.20 =
+* Wrap block editor's related logic in admin context to prevent issue with third party plugins.
+
+= 1.9.19 =
+* Improvement: It's now possible to switch between Make and the block editor on a per post/page basis.
+
+= 1.9.18 =
+* Bugfix.
+
+= 1.9.17 =
+* Bugfix.
+
+= 1.9.16 =
+* WordPress 5.0 editor compatibility notice.
+
+= 1.9.15 =
+* Limit appearance of HappyForms banner to Posts and Pages edit screen.
+
+= 1.9.14 =
+* Removed line breaks from couple of strings in code to make translation possible.
+
+= 1.9.13 =
+* New color setting for mobile menu trigger background, accessibility improvements.
+
+= 1.9.12 =
+* Fixed icons in List format builder items.
+
+= 1.9.11 =
+* Font Awesome upgraded to the latest version, minor bug fixes.
+
+= 1.9.10 =
+* Minor bug fixes and improvements.
+
+= 1.9.9 =
+* Miscellaneous bug fixes and improvements.
 
 = 1.9.8 =
 * Compatibility bug fixes and improvements.
